@@ -1,0 +1,13 @@
+<ion-view view-title="Browse">
+  <ion-content>
+    <div class="list">
+    <a class="item item-text-wrap"
+       href="{{feed.link}}" target="_blank"
+       ng-repeat="feed in feeds">
+        <h2>{{feed.title}}</h2>
+        <p>{{feed.contentSnippet}}</p>
+        <h6>{{feed.publishedDate}}</h6>
+    </a>
+</div> 
+  </ion-content>
+</ion-view>
